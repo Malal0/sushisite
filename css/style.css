@@ -28,7 +28,7 @@ body nav {
 }
 
 body nav img {
-  height: 2.5em;
+  height: 2em;
 }
 
 body nav ul {
@@ -76,11 +76,11 @@ body nav .current {
 }
 
 body nav .ul-pad-initial {
-  padding-block: 2rem;
+  padding-block: 1em;
 }
 
 body nav .ul-pad-final {
-  padding-block: 1rem;
+  padding-block: .3em;
 }
 
 body #toppagebtn {
@@ -98,7 +98,7 @@ body #toppagebtn:hover {
 
 body .deal-box {
   background-color: #55c7fc;
-  height: 90vh;
+  height: 60vh;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -425,7 +425,7 @@ footer #socials ul {
 }
 
 footer #socials img {
-  height: 2.5em;
+  height: 3.5em;
   background-color: black;
   padding: 1em;
   border: 3px solid black;
