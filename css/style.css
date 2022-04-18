@@ -100,9 +100,6 @@ body #toppagebtn:hover {
 body .deal-box {
   height: 50vh;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   overflow-y: hidden;
   overflow-x: auto;
   -ms-scroll-snap-type: x mandatory;
@@ -264,7 +261,7 @@ body #container #box-2-0 h1 {
 
 body #container #box-2-0 iframe {
   width: 35em;
-  height: 20em;
+  aspect-ratio: 16/9;
 }
 
 body #container #join-our-team {
