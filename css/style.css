@@ -584,3 +584,7 @@ footer #abs-btm #ftr-logo-bx img {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.box img {
+  height: 90px;
+}
