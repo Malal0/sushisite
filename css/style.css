@@ -20,6 +20,7 @@ body {
   background-color: #c7fc55;
   overflow-x: hidden;
   width: 100%;
+  font-size: 16px;
 }
 
 body nav {
@@ -553,7 +554,7 @@ footer #abs-btm #ftr-logo-bx img {
 }
 
 .shop-products {
-  background-color: rgba(255, 0, 0, 0.25);
+  background-color: rgba(230, 230, 230, 0.25);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -562,11 +563,7 @@ footer #abs-btm #ftr-logo-bx img {
       grid-template-rows: repeat(5, 1fr);
 }
 
-.shop-products a:hover {
-  background-color: rgba(0, 0, 255, 0.315);
-}
-
-.box {
+.shop-item {
   height: 100%;
   width: 100%;
   border: 2px rgba(74, 0, 77, 0.5) solid;
@@ -585,6 +582,53 @@ footer #abs-btm #ftr-logo-bx img {
           justify-content: center;
 }
 
-.box img {
+.shop-item img {
   height: 90px;
+}
+
+.shop-item:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.shop-item .shop-item-button {
+  outline: 1px solid #888888;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 3px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shop-item .shop-item-button p {
+  padding-inline: 10px;
+}
+
+.shop-item button {
+  font-size: 25px;
+  height: 30px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: none;
+  background-color: #e6e6e6;
+}
+
+.shop-item button:hover {
+  background-color: rgba(204, 204, 204, 0.5);
+}
+
+.shop-item button:active {
+  background-color: #cccccc;
 }
