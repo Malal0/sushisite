@@ -42,6 +42,24 @@ const foodItems = [
 ]
 //      Shop Javascript     //
 const shopProducts = document.querySelector('.shop-products');
+
+foodItems.forEach(child => {
+    let div = document.createElement("div");
+    div.classList.add("shop-item");
+    div.innerHTML = `
+    <img src=${child.img} class="productImg" alt="pic"/>
+    <p class="productTitle">${child.title}</p>
+    <p class="productPrice">$${child.price}</p>
+    <div class="shop-item-button">
+    <button data-value="-1">-</button>
+    <p class="productAmount">0</p>
+    <button data-value="1">+</button>
+    </div>
+    `;
+
+    shopProducts.appendChild(div);
+});
+
 const shopProductsArray = Array.from(shopProducts.children);
 
 shopProductsArray.forEach(child => {
@@ -61,4 +79,3 @@ shopProductsArray.forEach(child => {
         };
     }));
 });
-
