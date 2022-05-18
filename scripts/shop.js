@@ -30,9 +30,9 @@ const foodItems = [
         img: "https://order.kurasushi.com/uploads/1/3/4/5/134522373/s934172392851576524_p21_i3_w800.jpeg?width=320"
     },
     {
-        title: "",
+        title: "Seared Scallop",
         price: 2.95,
-        img: ""
+        img: "https://order.kurasushi.com/uploads/1/3/4/5/134522373/s934172392851576524_p58_i3_w800.jpeg?width=320"
     },
     {
         title: "Shrimp Avocado Roll",
@@ -40,6 +40,8 @@ const foodItems = [
         img: "https://order.kurasushi.com/uploads/1/3/4/5/134522373/s934172392851576524_p107_i2_w800.jpeg?width=320"
     }
 ]
+
+let cartTotal = 0;
 //      Shop Javascript     //
 const shopProducts = document.querySelector('.shop-products');
 
@@ -72,10 +74,14 @@ shopProductsArray.forEach(child => {
 
         if (dv == 1) {
             initial++
+            cartTotal++
             amount.textContent = initial;
+            console.log(cartTotal);
         } else if (dv == -1 && initial > 0) {
             initial--
+            cartTotal--
             amount.textContent = initial;
+            console.log(cartTotal);
         };
     }));
 });
