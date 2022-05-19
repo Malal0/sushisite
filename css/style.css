@@ -101,17 +101,10 @@ body #toppagebtn:hover {
 body .deal-box {
   outline: 1px solid blue;
   height: 50vh;
-  position: relative;
+  width: 100vw;
+  overflow-x: scroll;
   /*overflow-y: hidden;
-        overflow-x: auto;
         scroll-snap-type: x mandatory;*/
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
 }
 
 body .deal-box .deals {
@@ -125,7 +118,6 @@ body .deal-box .deals {
           flex-direction: column;
   height: 100%;
   width: 100%;
-  scroll-snap-align: start;
   font-size: 3.5ch;
 }
 
