@@ -99,16 +99,28 @@ body #toppagebtn:hover {
 }
 
 body .deal-box {
-  outline: 1px solid blue;
+  outline: 3px solid blue;
   height: 50vh;
   width: 100vw;
-  overflow-x: scroll;
-  /*overflow-y: hidden;
-        scroll-snap-type: x mandatory;*/
+  overflow: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+body .deal-box > * {
+  width: 100vw;
 }
 
 body .deal-box .deals {
   outline: 1px solid red;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,19 +128,41 @@ body .deal-box .deals {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
-  width: 100%;
   font-size: 3.5ch;
-}
-
-body .deal-box .deals > * {
-  background-color: purple;
+  position: relative;
 }
 
 body .deal-box .banner-img {
   width: 100%;
-  background-position: center bottom;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
   z-index: -1;
+}
+
+body .deal-box .deals-txt {
+  background-color: lightcoral;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
 }
 
 body #container {
